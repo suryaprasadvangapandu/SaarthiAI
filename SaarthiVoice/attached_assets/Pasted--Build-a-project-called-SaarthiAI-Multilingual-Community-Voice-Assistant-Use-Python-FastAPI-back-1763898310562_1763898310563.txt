@@ -1,0 +1,93 @@
+“Build a project called SaarthiAI: Multilingual Community Voice Assistant.
+Use Python + FastAPI backend and simple HTML/CSS/JS frontend.
+Create the entire folder structure and all files.
+
+Core Requirements:
+
+Voice Input (Browser Mic) → Send audio → Server → Convert audio to text.
+
+Use the SpeechRecognition Python library or whisper small model for transcription.
+
+Language: support Hindi, Telugu, English.
+
+Intent Detection + Guidance System
+
+Create a simple rule-based engine:
+
+If query contains “fever”, “temperature”: give first-aid health advice.
+
+If contains “scheme / yojana / application”: give welfare scheme info.
+
+If contains “heatwave / flood / warning”: give climate safety guidance.
+
+Responses must be simple, step-by-step instructions.
+
+Text → Voice Reply
+
+Use gTTS (Google Text-to-Speech) or pyttsx3.
+
+Return audio file back to frontend for playback.
+
+API Endpoints
+
+/transcribe → accepts audio, returns text
+
+/respond → accepts text, returns AI guidance + voice audio
+
+/health, /schemes, /climate (optional)
+
+Frontend Requirements
+
+A clean web page with:
+
+Mic button (start/stop recording)
+
+Chat bubbles for messages
+
+Audio playback for responses
+
+Language selector (Hindi, Telugu, English)
+
+Offline Mode (basic)
+
+Cache last 5 responses in localStorage.
+
+If backend offline, show: “Offline mode active. Last known guidance:” and show cached responses.
+
+Project Structure
+
+main.py (FastAPI)
+
+static/ (JS, CSS)
+
+templates/index.html
+
+models/logic.py → rule-based engine
+
+utils/audio_helper.py → speech-to-text + text-to-speech
+
+README.md with setup instructions
+
+Demo Flow
+
+User selects language → presses mic → speaks: “My child has fever.”
+
+Frontend sends audio → /transcribe → text
+
+/respond checks rule-engine → generates advice
+
+Backend returns advice text + TTS audio
+
+Frontend displays chat + plays audio
+
+Extra Notes
+
+Make sure CORS is enabled.
+
+Make the UI responsive and simple.
+
+Add comments in all code so I can understand.
+
+App must run fully on Replit without external paid APIs.
+
+Now generate the complete working code.”**
