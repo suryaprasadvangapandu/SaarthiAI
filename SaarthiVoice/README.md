@@ -244,6 +244,3 @@ For issues and questions:
 - FastAPI framework
 - Replit community
 
----
-
-**Made with ❤️ for community empowerment**
